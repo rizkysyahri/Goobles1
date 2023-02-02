@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="container mx-auto">
+      <div class="hero-content mx-auto">
+        <div class="flex-column items-center">
+          <div class="mb-2">
+            <div
+              class="card w-96 bg-primary text-primary-content"
+              id="targetObject"
+            >
+              <div class="card-body">
+                <h2 class="card-title">Latar Dinamis</h2>
+                <p>
+                  ubah warna latar ini menjadi dinamis sesuai keinginan gueh
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-control w-full max-w-xs mx-auto">
+            <label class="label">
+              <span class="label-text">warna baru</span>
+              <span class="label-text-alt">contoh #7b1111 atau red,blue</span>
+            </label>
+            <input
+              type="text"
+              placeholder="masukan disini"
+              class="input input-bordered w-full mx-w-xs mb-4"
+              id="inputHexa"
+            />
+          </div>
+          <button
+            class="inline-block cursor-pointer rounded-md bg-primary px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-white hover:text-primary mx-auto w-full"
+            onclick="ubahLatar()"
+          >Ubah warna letak objec</button>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
